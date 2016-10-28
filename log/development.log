@@ -4708,3 +4708,314 @@ Processing by UsersController#index as HTML
   Rendered users/index.html.erb within layouts/application (39.6ms)
   Rendered sessions/_login.html.erb (0.2ms)
 Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-26 11:04:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (133.3ms)
+  Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 1216ms (Views: 1159.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/layout.self-9499ccea8174c451b3e033f35cdc58f8c204120fc47381873ba3e5b5fc0c1c10.css?body=1" for 127.0.0.1 at 2016-10-26 11:04:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname0"], ["firstname", "Firstname0"], ["email", "chh0@aber.ac.uk"], ["created_at", "2016-10-26 10:28:43.772026"], ["updated_at", "2016-10-26 10:28:43.772026"]]
+  [1m[35m (168.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname1"], ["firstname", "Firstname1"], ["email", "chh1@aber.ac.uk"], ["created_at", "2016-10-26 10:28:43.946814"], ["updated_at", "2016-10-26 10:28:43.946814"]]
+  [1m[36m (143.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname2"], ["firstname", "Firstname2"], ["email", "chh2@aber.ac.uk"], ["created_at", "2016-10-26 10:28:44.092254"], ["updated_at", "2016-10-26 10:28:44.092254"]]
+  [1m[35m (199.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname3"], ["firstname", "Firstname3"], ["email", "chh3@aber.ac.uk"], ["created_at", "2016-10-26 10:28:44.294587"], ["updated_at", "2016-10-26 10:28:44.294587"]]
+  [1m[36m (154.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname4"], ["firstname", "Firstname4"], ["email", "chh4@aber.ac.uk"], ["created_at", "2016-10-26 10:28:44.451201"], ["updated_at", "2016-10-26 10:28:44.451201"]]
+  [1m[35m (153.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname5"], ["firstname", "Firstname5"], ["email", "chh5@aber.ac.uk"], ["created_at", "2016-10-26 10:28:44.607723"], ["updated_at", "2016-10-26 10:28:44.607723"]]
+  [1m[36m (144.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname6"], ["firstname", "Firstname6"], ["email", "chh6@aber.ac.uk"], ["created_at", "2016-10-26 10:28:44.754780"], ["updated_at", "2016-10-26 10:28:44.754780"]]
+  [1m[35m (143.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname7"], ["firstname", "Firstname7"], ["email", "chh7@aber.ac.uk"], ["created_at", "2016-10-26 10:28:44.900291"], ["updated_at", "2016-10-26 10:28:44.900291"]]
+  [1m[36m (147.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname8"], ["firstname", "Firstname8"], ["email", "chh8@aber.ac.uk"], ["created_at", "2016-10-26 10:28:45.057469"], ["updated_at", "2016-10-26 10:28:45.057469"]]
+  [1m[35m (153.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname9"], ["firstname", "Firstname9"], ["email", "chh9@aber.ac.uk"], ["created_at", "2016-10-26 10:28:45.213527"], ["updated_at", "2016-10-26 10:28:45.213527"]]
+  [1m[36m (154.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname10"], ["firstname", "Firstname10"], ["email", "chh10@aber.ac.uk"], ["created_at", "2016-10-26 10:28:45.370209"], ["updated_at", "2016-10-26 10:28:45.370209"]]
+  [1m[35m (154.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname11"], ["firstname", "Firstname11"], ["email", "chh11@aber.ac.uk"], ["created_at", "2016-10-26 10:28:45.526931"], ["updated_at", "2016-10-26 10:28:45.526931"]]
+  [1m[36m (132.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname12"], ["firstname", "Firstname12"], ["email", "chh12@aber.ac.uk"], ["created_at", "2016-10-26 10:28:45.661269"], ["updated_at", "2016-10-26 10:28:45.661269"]]
+  [1m[35m (131.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname13"], ["firstname", "Firstname13"], ["email", "chh13@aber.ac.uk"], ["created_at", "2016-10-26 10:28:45.795637"], ["updated_at", "2016-10-26 10:28:45.795637"]]
+  [1m[36m (154.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname14"], ["firstname", "Firstname14"], ["email", "chh14@aber.ac.uk"], ["created_at", "2016-10-26 10:28:45.952346"], ["updated_at", "2016-10-26 10:28:45.952346"]]
+  [1m[35m (154.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname15"], ["firstname", "Firstname15"], ["email", "chh15@aber.ac.uk"], ["created_at", "2016-10-26 10:28:46.110033"], ["updated_at", "2016-10-26 10:28:46.110033"]]
+  [1m[36m (152.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname16"], ["firstname", "Firstname16"], ["email", "chh16@aber.ac.uk"], ["created_at", "2016-10-26 10:28:46.265630"], ["updated_at", "2016-10-26 10:28:46.265630"]]
+  [1m[35m (133.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname17"], ["firstname", "Firstname17"], ["email", "chh17@aber.ac.uk"], ["created_at", "2016-10-26 10:28:46.401512"], ["updated_at", "2016-10-26 10:28:46.401512"]]
+  [1m[36m (143.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname18"], ["firstname", "Firstname18"], ["email", "chh18@aber.ac.uk"], ["created_at", "2016-10-26 10:28:46.547092"], ["updated_at", "2016-10-26 10:28:46.547092"]]
+  [1m[35m (154.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname19"], ["firstname", "Firstname19"], ["email", "chh19@aber.ac.uk"], ["created_at", "2016-10-26 10:28:46.703682"], ["updated_at", "2016-10-26 10:28:46.703682"]]
+  [1m[36m (154.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname20"], ["firstname", "Firstname20"], ["email", "chh20@aber.ac.uk"], ["created_at", "2016-10-26 10:28:46.860297"], ["updated_at", "2016-10-26 10:28:46.860297"]]
+  [1m[35m (154.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname21"], ["firstname", "Firstname21"], ["email", "chh21@aber.ac.uk"], ["created_at", "2016-10-26 10:28:47.016974"], ["updated_at", "2016-10-26 10:28:47.016974"]]
+  [1m[36m (154.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname22"], ["firstname", "Firstname22"], ["email", "chh22@aber.ac.uk"], ["created_at", "2016-10-26 10:28:47.173611"], ["updated_at", "2016-10-26 10:28:47.173611"]]
+  [1m[35m (132.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname23"], ["firstname", "Firstname23"], ["email", "chh23@aber.ac.uk"], ["created_at", "2016-10-26 10:28:47.308073"], ["updated_at", "2016-10-26 10:28:47.308073"]]
+  [1m[36m (454.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname24"], ["firstname", "Firstname24"], ["email", "chh24@aber.ac.uk"], ["created_at", "2016-10-26 10:28:47.764858"], ["updated_at", "2016-10-26 10:28:47.764858"]]
+  [1m[35m (154.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname25"], ["firstname", "Firstname25"], ["email", "chh25@aber.ac.uk"], ["created_at", "2016-10-26 10:28:47.921480"], ["updated_at", "2016-10-26 10:28:47.921480"]]
+  [1m[36m (154.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname26"], ["firstname", "Firstname26"], ["email", "chh26@aber.ac.uk"], ["created_at", "2016-10-26 10:28:48.078149"], ["updated_at", "2016-10-26 10:28:48.078149"]]
+  [1m[35m (143.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname27"], ["firstname", "Firstname27"], ["email", "chh27@aber.ac.uk"], ["created_at", "2016-10-26 10:28:48.223681"], ["updated_at", "2016-10-26 10:28:48.223681"]]
+  [1m[36m (120.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname28"], ["firstname", "Firstname28"], ["email", "chh28@aber.ac.uk"], ["created_at", "2016-10-26 10:28:48.346948"], ["updated_at", "2016-10-26 10:28:48.346948"]]
+  [1m[35m (155.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname29"], ["firstname", "Firstname29"], ["email", "chh29@aber.ac.uk"], ["created_at", "2016-10-26 10:28:48.505072"], ["updated_at", "2016-10-26 10:28:48.505072"]]
+  [1m[36m (154.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname30"], ["firstname", "Firstname30"], ["email", "chh30@aber.ac.uk"], ["created_at", "2016-10-26 10:28:48.661761"], ["updated_at", "2016-10-26 10:28:48.661761"]]
+  [1m[35m (132.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname31"], ["firstname", "Firstname31"], ["email", "chh31@aber.ac.uk"], ["created_at", "2016-10-26 10:28:48.796225"], ["updated_at", "2016-10-26 10:28:48.796225"]]
+  [1m[36m (154.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname32"], ["firstname", "Firstname32"], ["email", "chh32@aber.ac.uk"], ["created_at", "2016-10-26 10:28:48.953025"], ["updated_at", "2016-10-26 10:28:48.953025"]]
+  [1m[35m (131.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname33"], ["firstname", "Firstname33"], ["email", "chh33@aber.ac.uk"], ["created_at", "2016-10-26 10:28:49.087346"], ["updated_at", "2016-10-26 10:28:49.087346"]]
+  [1m[36m (154.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname34"], ["firstname", "Firstname34"], ["email", "chh34@aber.ac.uk"], ["created_at", "2016-10-26 10:28:49.244013"], ["updated_at", "2016-10-26 10:28:49.244013"]]
+  [1m[35m (154.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname35"], ["firstname", "Firstname35"], ["email", "chh35@aber.ac.uk"], ["created_at", "2016-10-26 10:28:49.400625"], ["updated_at", "2016-10-26 10:28:49.400625"]]
+  [1m[36m (154.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname36"], ["firstname", "Firstname36"], ["email", "chh36@aber.ac.uk"], ["created_at", "2016-10-26 10:28:49.557337"], ["updated_at", "2016-10-26 10:28:49.557337"]]
+  [1m[35m (132.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname37"], ["firstname", "Firstname37"], ["email", "chh37@aber.ac.uk"], ["created_at", "2016-10-26 10:28:49.691732"], ["updated_at", "2016-10-26 10:28:49.691732"]]
+  [1m[36m (120.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["lastname", "Lastname38"], ["firstname", "Firstname38"], ["email", "chh38@aber.ac.uk"], ["created_at", "2016-10-26 10:28:49.815023"], ["updated_at", "2016-10-26 10:28:49.815023"]]
+  [1m[35m (120.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("lastname", "firstname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["lastname", "Lastname39"], ["firstname", "Firstname39"], ["email", "chh39@aber.ac.uk"], ["created_at", "2016-10-26 10:28:49.938330"], ["updated_at", "2016-10-26 10:28:49.938330"]]
+  [1m[36m (155.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-26 11:29:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (45.2ms)
+  Rendered sessions/_login.html.erb (0.9ms)
+Completed 200 OK in 487ms (Views: 464.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/layout.self-9499ccea8174c451b3e033f35cdc58f8c204120fc47381873ba3e5b5fc0c1c10.css?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/scaffolds.self-13d79a2a31aa392cfbd6cd70577b2187eae557f0e6f2841f38b6369ba1d86dd2.css?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-10-26 11:29:03 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-26 11:29:05 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 30 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (248.8ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 351ms (Views: 345.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/edit-a1c1d5c954d4aee288d4a79a78a2e16a319d77493dd1fe9fa67dcbca48bfff68.png" for 127.0.0.1 at 2016-10-26 11:29:06 +0100
+
+
+Started GET "/assets/destroy-ffb70c2be8cb2a81f48810efae3b9bc70777c3af189730f244b8e84118b830b2.gif" for 127.0.0.1 at 2016-10-26 11:29:06 +0100
+
+
+Started GET "/assets/eye-8c0e9fa3acc4788a80183f7ec24a6fa5c3eac460b74843c93f8b2e5ae67284fc.jpg" for 127.0.0.1 at 2016-10-26 11:29:06 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-26 11:44:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/chris/weblog/app/models/user.rb:4: unterminated regexp meets end of file
+/home/chris/weblog/app/models/user.rb:4: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/models/user.rb:4: unterminated regexp meets end of file
+  app/models/user.rb:4: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.1ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.8ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/chris/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-26 11:46:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (366.4ms)
+  Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 496ms (Views: 475.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/layout.self-9499ccea8174c451b3e033f35cdc58f8c204120fc47381873ba3e5b5fc0c1c10.css?body=1" for 127.0.0.1 at 2016-10-26 11:46:37 +0100
+
+
+Started GET "/assets/scaffolds.self-13d79a2a31aa392cfbd6cd70577b2187eae557f0e6f2841f38b6369ba1d86dd2.css?body=1" for 127.0.0.1 at 2016-10-26 11:46:37 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-10-26 11:46:37 +0100
+
+
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for 127.0.0.1 at 2016-10-26 11:46:37 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/eye-8c0e9fa3acc4788a80183f7ec24a6fa5c3eac460b74843c93f8b2e5ae67284fc.jpg" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/edit-a1c1d5c954d4aee288d4a79a78a2e16a319d77493dd1fe9fa67dcbca48bfff68.png" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/assets/destroy-ffb70c2be8cb2a81f48810efae3b9bc70777c3af189730f244b8e84118b830b2.gif" for 127.0.0.1 at 2016-10-26 11:46:38 +0100
+
+
+Started GET "/users?page=2" for 127.0.0.1 at 2016-10-26 11:46:59 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 8[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 8[0m
+  Rendered users/index.html.erb within layouts/application (64.9ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 129ms (Views: 125.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users?page=5" for 127.0.0.1 at 2016-10-26 11:47:01 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 32
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 32
+  Rendered users/index.html.erb within layouts/application (68.9ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 117ms (Views: 114.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users?page=7" for 127.0.0.1 at 2016-10-26 11:47:03 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 48[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 48
+  Rendered users/index.html.erb within layouts/application (32.3ms)
+  Rendered sessions/_login.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 1.1ms)
