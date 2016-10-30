@@ -12,6 +12,6 @@
 
 
 1..40.times do |j|
-        Post.create(title: "Title#{j}", body: "Body#{j}", user.email: "chh#{j}@aber.ac.uk")
+        Post.create(title: "Title#{j}", body: "Body#{j}", user_id: "chh#{j}@aber.ac.uk")
 end
 

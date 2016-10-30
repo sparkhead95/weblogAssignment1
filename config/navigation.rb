@@ -50,8 +50,9 @@ SimpleNavigation::Configuration.run do |navigation|
     #                            against the current URI.  You may also use a proc, or the symbol <tt>:subpath</tt>. 
     #
     
-    # Highlight the home tab either if the path is / or /home
-    primary.item :posts, 'Home', '/posts', :highlights_on => /(^\/$)|(^\/posts)/
+    # Highlight the home tab either if the path is / or /home 
+    primary.item :home, 'Home', '/home_controller/home', :highlights_on => /(^\/$)|(^\/home)/
+    primary.item :posts, 'Posts', '/posts'
     primary.item :jobs, 'Jobs', '/jobs'
     primary.item :profile, 'Profile', '/profile', :if => Proc.new { is_admin? }
     primary.item :users, 'Users', users_path, :if => Proc.new { is_admin? }
