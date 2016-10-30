@@ -20,15 +20,22 @@
 	<% else %>
 	<td> Anonymous </td>
 	<% end %>
-	<td style="padding-left:3px;"><%= link_to 'Show', post %></td>
-        <td style="padding-left:3px;"><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td style="padding-left:3px;"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<td style="padding-left:3px;"><%= link_to(image_tag('eye.jpg',alt:'Show', title:'Show details',border:'0'), post_path(post,page: @posts.current_page))%></td>
+        <td style="padding-left:3px;"><%= link_to(image_tag('edit.png',alt:'Edit', title:'Edit item',border:'0'), edit_post_path(post,page: @posts.current_page)) %></td>
+        <td style="padding-left:3px;"><%= link_to(image_tag('destroy.gif',alt:'Destroy', title:'Destroy item',border:'0'), post_path(post,page: @posts.current_page),data: {confirm:'Are you sure?'}, method: :delete)%></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<div class="digg_pagination">
+	<div>
+	<%=page_entries_info @posts%>
+	</div>
+<%=will_paginate @users,container:false%>  
+</div>
+
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_post_path(page: @posts.current_page) %>
 

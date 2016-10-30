@@ -1,10 +1,11 @@
 class PostsController < ApplicationController
+  before_action :set_current_page, except:[:index]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.paginate(page: params[:page], per_page: params[:per_page]).order('title')
   end
 
   # GET /posts/1
@@ -66,6 +67,21 @@ class PostsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
+    end
+
+    def set_current_page
+	@current_page = params[:page] || 1
+    end
+
+    def show_record_not_found(exception)
+	respond_to do |format|
+	  format.html {
+		redirect_to(posts_url(page: @current_page), notice: 'Post no longer exists.')
+	  }
+	format.json {
+	  render json: '{Post no longer exists.}', status: :unprocessable_entity
+	}
+	end	
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -6,6 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-1..40.times do |i|
-	User.create(lastname: "Lastname#{i}", firstname: "Firstname#{i}", email: "chh#{i}@aber.ac.uk")
+#1..40.times do |i|
+#	User.create(lastname: "Lastname#{i}", firstname: "Firstname#{i}", email: "chh#{i}@aber.ac.uk")
+#end
+
+
+1..40.times do |j|
+        Post.create(title: "Title#{j}", body: "Body#{j}", user.email: "chh#{j}@aber.ac.uk")
 end
+
