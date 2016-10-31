@@ -7155,3 +7155,540 @@ Started GET "/assets/edit-a1c1d5c954d4aee288d4a79a78a2e16a319d77493dd1fe9fa67dcb
 
 
 Started GET "/assets/destroy-ffb70c2be8cb2a81f48810efae3b9bc70777c3af189730f244b8e84118b830b2.gif" for 127.0.0.1 at 2016-10-30 16:17:11 +0000
+
+
+Started GET "/home_controller/home" for 127.0.0.1 at 2016-10-30 18:13:59 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home_controller/home" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.5ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/layout.self-9499ccea8174c451b3e033f35cdc58f8c204120fc47381873ba3e5b5fc0c1c10.css?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/scaffolds.self-13d79a2a31aa392cfbd6cd70577b2187eae557f0e6f2841f38b6369ba1d86dd2.css?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/assets/home_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-10-30 18:15:34 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-30 18:18:33 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:18:40 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (58.8ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 92ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 18:18:42 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (33.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 72.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:18:45 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (43.1ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 82.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/home_controller/home" for 127.0.0.1 at 2016-10-30 18:18:47 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:19:20 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (46.7ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 77.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 18:19:22 +0000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (42.5ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-30 18:41:40 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:41:44 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (41.2ms)
+  Rendered sessions/_login.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 79.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts?page=5" for 127.0.0.1 at 2016-10-30 18:41:48 +0000
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mPost Load (4.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 32[0m
+  [1m[35m (2.5ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 32[0m
+  Rendered posts/index.html.erb within layouts/application (72.8ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 128ms (Views: 118.5ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 18:41:51 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (41.8ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 103ms (Views: 99.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at 2016-10-30 18:41:53 +0000
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 24[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 24[0m
+  Rendered users/index.html.erb within layouts/application (35.5ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 110ms (Views: 107.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:41:58 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (48.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 111ms (Views: 107.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new?page=1" for 127.0.0.1 at 2016-10-30 18:41:59 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"page"=>"1"}
+  Rendered posts/_form.html.erb (2.5ms)
+  Rendered posts/new.html.erb within layouts/application (5.2ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 18:42:03 +0000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (39.6ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 90.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:42:09 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (51.0ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 109ms (Views: 106.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new?page=1" for 127.0.0.1 at 2016-10-30 18:42:12 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"page"=>"1"}
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2016-10-30 18:42:22 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NN5mqn1zv9mvA8Mw4BCYHpaGd3ZEQfP0wa/9Hy+LDFMbMQ3n3s/AmoNJ4bYi18T0A20lb7HqIsyh8q0dR17eJA==", "post"=>{"title"=>"posttest", "body"=>"body"}, "email"=>"leh28@aber.ac.uk", "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "leh28@aber.ac.uk"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "posttest"], ["body", "body"], ["user_id", 2], ["created_at", "2016-10-30 18:42:22.734034"], ["updated_at", "2016-10-30 18:42:22.734034"]]
+  [1m[35m (283.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/55
+Completed 302 Found in 295ms (ActiveRecord: 283.9ms)
+
+
+Started GET "/posts/55" for 127.0.0.1 at 2016-10-30 18:42:23 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 55]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-30 18:59:15 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:59:18 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (52.4ms)
+  Rendered sessions/_login.html.erb (3.0ms)
+Completed 200 OK in 104ms (Views: 101.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 18:59:21 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (35.8ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 91ms (Views: 88.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 18:59:26 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (1.7ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (41.7ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 86.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/new?page=1" for 127.0.0.1 at 2016-10-30 18:59:29 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"page"=>"1"}
+  Rendered posts/_form.html.erb (6.7ms)
+  Rendered posts/new.html.erb within layouts/application (7.6ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2016-10-30 18:59:38 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QIojhQ2c58+znqyx6XymVvYDZbwn16KwgntqQjRVIIpvZUjIriCYjJ/Ujjcru/q8Y+g3pdJ8c4jiJjpAXIDy/Q==", "post"=>{"title"=>"Title2", "body"=>"body"}, "email"=>"leh28@aber.ac.uk", "commit"=>"Create Post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "leh28@aber.ac.uk"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Title2"], ["body", "body"], ["user_id", 2], ["created_at", "2016-10-30 18:59:38.958984"], ["updated_at", "2016-10-30 18:59:38.958984"]]
+  [1m[36m (251.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/56
+Completed 302 Found in 263ms (ActiveRecord: 252.3ms)
+
+
+Started GET "/posts/56" for 127.0.0.1 at 2016-10-30 18:59:39 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"56"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 56]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+  Rendered sessions/_login.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-30 19:05:44 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.4ms)
+Completed 200 OK in 499ms (Views: 498.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 19:05:48 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (34.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (154.7ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 227ms (Views: 190.5ms | ActiveRecord: 35.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 19:05:51 +0000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (40.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 731ms (Views: 728.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-30 19:06:53 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.4ms)
+Completed 200 OK in 193ms (Views: 191.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 19:06:56 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (9.3ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (63.2ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 203.3ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 19:06:58 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (64.7ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 147ms (Views: 142.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 19:07:03 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (34.4ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 91.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 19:07:08 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (47.6ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 85.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new?page=1" for 127.0.0.1 at 2016-10-30 19:07:10 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"page"=>"1"}
+  Rendered posts/_form.html.erb (2.7ms)
+  Rendered posts/new.html.erb within layouts/application (43.3ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 116ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2016-10-30 19:07:20 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vuLZ1aR4E6BKgfZ41kPiPm4oyLLmP1VS9MmItUydvBGRDbKYB8Rs42bL1P4UhL7U+8OaqxOUhGqUlNi3JEhuZg==", "post"=>{"title"=>"ournewtitle", "body"=>"body"}, "email"=>"ldez@bing.com", "commit"=>"Create Post"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "ldez@bing.com"]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (23.0ms)[0m  INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "ournewtitle"], ["body", "body"], ["user_id", 5], ["created_at", "2016-10-30 19:07:20.224796"], ["updated_at", "2016-10-30 19:07:20.224796"]]
+  [1m[36m (311.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/57
+Completed 302 Found in 350ms (ActiveRecord: 335.9ms)
+
+
+Started GET "/posts/57" for 127.0.0.1 at 2016-10-30 19:07:20 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"57"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 57]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (7.1ms)
+  Rendered sessions/_login.html.erb (0.7ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-30 19:11:31 +0000
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (0.1ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 19:11:33 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (47.4ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 103ms (Views: 100.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-30 19:11:36 +0000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (37.7ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 123ms (Views: 118.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-10-30 19:11:42 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY title LIMIT 1 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (41.0ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 73.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/new?page=1" for 127.0.0.1 at 2016-10-30 19:11:45 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"page"=>"1"}
+  Rendered posts/_form.html.erb (2.4ms)
+  Rendered posts/new.html.erb within layouts/application (54.0ms)
+  Rendered sessions/_login.html.erb (0.3ms)
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2016-10-30 19:11:54 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tkRfCs/4muuf21l229LjPak23M2p7ySAM6fmnB2erQyZqzRHbETlqLORe/AZFb/XPN2O1FxE9bhT+raedUt/ew==", "post"=>{"title"=>"thisnewpost", "body"=>"body"}, "email"=>"tlar@aber.ac.uk", "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "tlar@aber.ac.uk"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "thisnewpost"], ["body", "body"], ["user_id", 7], ["created_at", "2016-10-30 19:11:54.078674"], ["updated_at", "2016-10-30 19:11:54.078674"]]
+  [1m[35m (261.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/58
+Completed 302 Found in 268ms (ActiveRecord: 262.4ms)
+
+
+Started GET "/posts/58" for 127.0.0.1 at 2016-10-30 19:11:54 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 58]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 0.7ms)
