@@ -7692,3 +7692,49 @@ Processing by PostsController#show as HTML
   Rendered posts/show.html.erb within layouts/application (2.1ms)
   Rendered sessions/_login.html.erb (0.2ms)
 Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-31 12:07:04 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeControllerController#home as HTML
+  Rendered home_controller/home.html.erb within layouts/application (75.4ms)
+  Rendered sessions/_login.html.erb (1.0ms)
+Completed 200 OK in 4696ms (Views: 4605.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-10-31 12:07:55 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY lastname, firstname LIMIT 1 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (303.0ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 491ms (Views: 465.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/new?page=1" for 127.0.0.1 at 2016-10-31 13:49:13 +0000
+Processing by UsersController#new as HTML
+  Parameters: {"page"=>"1"}
+  Rendered users/_form.html.erb (85.2ms)
+  Rendered users/new.html.erb within layouts/application (87.1ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 208ms (Views: 207.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-31 13:49:30 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3C3+XkeRe+Xa4XY+AbJeG9dTIExxJrdiowchSzFhOH3hx9MWKc9TjUC9LGteF2gjwV6hUGsSEGKAAccTIqSn/g==", "page"=>"1", "user"=>{"firstname"=>"Newuser", "lastname"=>"lastname", "email"=>"lastname@gmail.com"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (78.6ms)[0m  INSERT INTO "users" ("firstname", "lastname", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["firstname", "Newuser"], ["lastname", "Lastname"], ["email", "lastname@gmail.com"], ["created_at", "2016-10-31 13:49:30.660819"], ["updated_at", "2016-10-31 13:49:30.660819"]]
+  [1m[36m (189.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/52
+Completed 302 Found in 352ms (ActiveRecord: 268.1ms)
+
+
+Started GET "/users/52" for 127.0.0.1 at 2016-10-31 13:49:31 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 52]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  Rendered sessions/_login.html.erb (0.2ms)
+Completed 200 OK in 107ms (Views: 54.1ms | ActiveRecord: 0.3ms)
